@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nejo Blog | Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/f39935b66f.js" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+        <main id="mainMenu">
+            <div id="userImg">
+                <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="user">
+            </div>
+            <div id="userName">
+                <h2 class="title-name">Nejo</h2>
+            </div>
+            <div id="descriptionUser">
+                <h4 class="title-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ducimus sit odit eveniet eum aperiam? Architecto totam voluptatibus, beatae sint sit, dicta facilis cum quis enim pariatur ea voluptas dolores!</h4>
+            </div>
+            <div class="menu-options">
+                <div class="static-options items-menu">
+                    <a href="#" class="link-items">Biografía</a>
+                </div>
+                <div class="static-options items-menu">
+                    <a href="#" class="link-items">Trabajos</a>
+                </div>
+                <div class="static-options items-menu">
+                    <a href="#" class="link-items">Posteos</a>
+                </div>
+                <div class="static-options items-menu">
+                    <a href="#" class="link-items">Contacto</a>
+                </div>
+            </div>
+            <div id="menuFooter">
+                <h5 class="title-footer">©2022 - Gonzalo Ulloa</h5>
+            </div>
+        </main>
+
+        <header id="headerBlog">
+            <div id="headerMenuIcon" class="btn_open" style="display: none;">
+                <i class="fas fa-bars icon-option-header headerIconMenuOn" id="buttonMenu" style="display: none;"></i>
+                <i class="fa-solid fa-xmark icon-option-header" style="display: none;"></i>
+            </div>
+            <div id="nejoBlogLogo">
+                <a href="index.html" class="nejo-blog-logo_link" title="Nejo Blog">
+                    <i class="fa-brands fa-neos logo-header"></i>
+                    <h4 class="title-header">NejoBlog</h4>
+                </a>
+            </div>
+            <div id="userLog">
+                <a href="register.html">
+                    Registrarse
+                </a>
+                <a href="#">
+                    <button type="submit">Ingresar</button>
+                </a>
+            </div>
+            <div id="headerMenuUser" style="display: none;">
+                <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+        </header>
+
+        <article class="article-register">
+            <form class="register-form">
+                    <h2 class="register-title">Registro de Usuario</h2>
+                    <div class="form-username half-input">
+                        <label for="nameRegister">Nombre *</label>
+                        <input type="text" id="nameRegister" class="input-form-register" required placeholder="Nombre">
+                    </div>
+                    <div class="form-lastname half-input">
+                        <label for="lastnameRegister">Apellido *</label>
+                        <input type="text" id="lastnameRegister" class="input-form-register" required placeholder="Apellido">
+                    </div>
+                    <div class="form-country half-input">
+                        <label for="countryRegister">Pais *</label>
+                        <select name="country" id="countryRegister" class="input-form-register" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Paraguay">Paraguay</option>
+                        </select>
+                    </div>
+                    <div class="form-mail half-input">
+                        <label for="mailRegister">Email *</label>
+                        <input type="mail" id="mailRegister" class="input-form-register" required placeholder="user@mail.com">
+                    </div>
+                    <div class="form-password half-input">
+                        <label for="passRegister">Contraseña *</label>
+                        <input type="password" id="passRegister" class="input-form-register pass-register" required placeholder="Contraseña">
+                        <div class="view-pass">
+                            <i class="fa-solid fa-eye-slash"></i>
+                            <i class="fa-solid fa-eye" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="form-lastpassword half-input">
+                        <label for="lastpassRegister">Repetir Contraseña *</label>
+                        <input type="password" id="lastpassRegister" class="input-form-register pass-register" required placeholder="Repetir contraseña">
+                        <div class="view-pass">
+                            <i class="fa-solid fa-eye-slash"></i>
+                            <i class="fa-solid fa-eye" style="display: none;"></i>
+                        </div>
+                    </div>
+                    <div class="form-checkbox-register">
+                        <input type="checkbox" id="checkRegister" required>
+                        <label for="checkRegister">Acepto los <a href="#">Terminos y condiciones</a></label>
+                    </div>
+                    
+                    <div class="form-button-register">
+                        <button type="submit" class="button-register">Registrar</button>
+                    </div>
+                </form>
+        </article>
+            <div id="categoryAsideIcon" class="category-aside-icon">
+                <i class="fa-solid fa-sliders iconOption asideIconOption" style="display: none;"></i>
+                <i class="fa-solid fa-xmark iconOption" style="display: none;"></i>
+            </div>
+        <aside id="asideMenu">
+            <div class="categories">
+                <ul class="category-list">
+                    <li class="category-option">
+                        <a href="#" class="category-option_link">Reflexiones  🧐</a>
+                    </li>
+                    <li class="category-option">
+                        <a href="#" class="category-option_link">Experiencias  🥇</a>
+                    </li>
+                    <li class="category-option">
+                        <a href="#" class="category-option_link">HTML  <i class="fa-brands fa-html5"></i></a>
+                    </li>
+                    <li class="category-option">
+                        <a href="#" class="category-option_link">CSS  <i class="fa-brands fa-css3-alt"></i></a>
+                    </li>
+                    <li class="category-option">
+                        <a href="#" class="category-option_link">JavaScript  <i class="fa-brands fa-js"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="newsletter">
+                <h2 class="title-news">
+                    Suscribirse a Noticias
+                </h2>
+                <form action="" id="newsletterForm">
+                    <label for="" id="newsletterFormLabel">
+                        <input type="email" placeholder="user@mail.com" id="newsletterFormInput">
+                        <button id="subscribeNews">Suscribirse</button>
+                    </label>
+                </form>
+            </div>
+            <hr>
+            <div id="adSection">
+
+            </div>
+        </aside>
+
+    <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
+</body>
+</html>
