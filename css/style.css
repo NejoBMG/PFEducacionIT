@@ -639,6 +639,9 @@ input, select{
         height: 100%;
         z-index: 1300;
     }
+    #asideMenu .categories{
+        width: 18rem;
+    }
     .aside-closed{
         animation: asideClosed 800ms forwards ease-in-out;
     }
