@@ -1,3 +1,32 @@
+function ajax(url,metodo){
+    let httpMethod = metodo || "GET";
+    let xhr = new XMLHttpRequest;
+    xhr.open(httpMethod,url);
+    xhr.send()
+    return xhr
+}
+let links = document.querySelectorAll('.module-selector');
+let article = document.getElementById('articleBlog');
+
+links.forEach((link)=>{
+    link.addEventListener('click',(e)=>{
+        let id = e.target.id;
+        let archivo = id + '.html';
+        let xhr = ajax(archivo);
+        xhr.addEventListener('load',()=>{
+            if (xhr.status === 200){
+                article.innerHTML=xhr.response;
+            }
+        })
+    })
+})
+let homePage = ajax('home.html');
+homePage.addEventListener('load',()=>{
+    if (homePage.status === 200){
+        article.innerHTML=homePage.response;
+    }
+})
+
 function openMainMenu(){
     let btn = document.querySelectorAll(".btn_open");
     const mainMenu = document.getElementById('mainMenu');
